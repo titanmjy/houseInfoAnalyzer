@@ -5,8 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
 @Component
-public interface HouseSourceInfoRepo extends CrudRepository<HouseSourceInfo,Integer> {
-    HouseSourceInfo findById(int id);
-
+public interface HouseSourceInfoRepo extends CrudRepository<HouseSourceInfo,String> {
 
 }
