@@ -2,11 +2,9 @@ package com.jinyu.dao;
 
 import com.jinyu.model.HouseSourceInfo;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public interface HouseSourceInfoRepo extends CrudRepository<HouseSourceInfo,Integer> {
-    HouseSourceInfo findById(int id);
-
 
 }

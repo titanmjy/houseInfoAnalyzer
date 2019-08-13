@@ -1,7 +1,6 @@
 package com.jinyu.model;
 
 import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 
@@ -14,7 +13,7 @@ import javax.persistence.*;
 public class HouseSourceInfo extends JpaRepositoriesAutoConfiguration {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private long id;
     // 单价
     @Column(name = "unit_price")
     private float unitPrice;
@@ -48,11 +47,11 @@ public class HouseSourceInfo extends JpaRepositoriesAutoConfiguration {
     @Column(name = "publish_date")
     private String publishDate;
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
